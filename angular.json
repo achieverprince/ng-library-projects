@@ -130,6 +130,41 @@
           }
         }
       }
+    },
+    "multiselect-month-picker": {
+      "root": "projects/multiselect-month-picker",
+      "sourceRoot": "projects/multiselect-month-picker/src",
+      "projectType": "library",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/multiselect-month-picker/tsconfig.lib.json",
+            "project": "projects/multiselect-month-picker/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/multiselect-month-picker/src/test.ts",
+            "tsConfig": "projects/multiselect-month-picker/tsconfig.spec.json",
+            "karmaConfig": "projects/multiselect-month-picker/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/multiselect-month-picker/tsconfig.lib.json",
+              "projects/multiselect-month-picker/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }
   },
   "defaultProject": "ng-library-projects"

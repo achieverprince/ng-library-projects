@@ -1,0 +1,33 @@
+<div id="{{elementId}}" class="multiselect-month-picker">
+  <div class="pickerPopup">
+    <div class="mpContainer">
+      <div class="mpHeader">
+        <div class="npSelectedYear">{{currentYear}}</div>
+        <div class="selectedDetail">{{selectedMonths.length}} selected</div>
+      </div>
+      <div class="mpYear">
+        <div class="yearPrevious" (click)="GoToPreviousYear()"><</div>
+        <div class="yearTxt">{{currentYear}}</div>
+        <div class="yearNext" (click)="GoToNextYear()"> > </div>
+      </div>
+      <div class="mpMonths">
+        <div [className]="GetMonthClassName('01')" (click)="SelectMonth('01')">JAN</div>
+        <div [className]="GetMonthClassName('02')" (click)="SelectMonth('02')">FEB</div>
+        <div [className]="GetMonthClassName('03')" (click)="SelectMonth('03')">MAR</div>
+        <div [className]="GetMonthClassName('04')" (click)="SelectMonth('04')">APR</div>
+        <div [className]="GetMonthClassName('05')" (click)="SelectMonth('05')">MAY</div>
+        <div [className]="GetMonthClassName('06')" (click)="SelectMonth('06')">JUN</div>
+        <div [className]="GetMonthClassName('07')" (click)="SelectMonth('07')">JUL</div>
+        <div [className]="GetMonthClassName('08')" (click)="SelectMonth('08')">AUG</div>
+        <div [className]="GetMonthClassName('09')" (click)="SelectMonth('09')">SEP</div>
+        <div [className]="GetMonthClassName('10')" (click)="SelectMonth('10')">OCT</div>
+        <div [className]="GetMonthClassName('11')" (click)="SelectMonth('11')">NOV</div>
+        <div [className]="GetMonthClassName('12')" (click)="SelectMonth('12')">DEC</div>
+      </div>
+      <div class="mpButtons">
+        <div class="cancelButton" (click)="CancelButtonClicked()">CANCEL</div>
+        <div class="okButton" (click)="OKButtonClicked()">OK</div>
+      </div>
+    </div>
+  </div>
+</div>

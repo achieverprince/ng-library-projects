@@ -17,6 +17,14 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "multiselect-month-picker": [
+        "dist/multiselect-month-picker"
+      ],
+      "multiselect-month-picker/*": [
+        "dist/multiselect-month-picker/*"
+      ]
+    }
   }
 }
