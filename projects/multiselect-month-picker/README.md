@@ -34,6 +34,9 @@ HTML:
 
 **currentYear** (optional) - Pass a default current Year (number)
 
+**maxMonthSelectionAllowed** (default 12) - Set maximum months that can be picked. (number)
+logs warning in console.
+
 ## Methods
 
 **OpenPicker(selectedMonths)** - selectedMonths [Array] (optional). To open the popup you need to call this function.
